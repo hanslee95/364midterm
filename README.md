@@ -46,6 +46,19 @@ CODE REQUIREMENTS-----------
 LIST OF ALL THE ROUTES-----------
 
 / -> base.html
+
+
 /input -> input.html
+
+
 /pokeguess -> poke_guess.html
+
+
 /names -> name_example.html
+
+
+
+
+
+
+
