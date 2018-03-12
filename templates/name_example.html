@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content1 %}
+<div id = 'nav'>
+	<ul>
+		<li><a href="{{ url_for('input') }}">Go to pokemon trainer input form</a></li>
+		<li><a href="{{ url_for('all_names') }}">Trainers Visited</a></li>
+		<li><a href="{{ url_for('base') }}">Home</a></li>
+
+	</ul>
+</div>
+<h1>Trainers and Pokemon Visited</h1>
+
+<ul>
+{% for each in trainer_and_pokemon %}
+    <li>{{ each[0] }} -- <i>{{ each[1] }}</i></li>
+{% endfor %}
+</ul>
+
+
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="/pokeguess" method="POST">
+	{{ form.hidden_tag() }}
+    {{ form.name.label() }}{{ form.name() }}<br>
+    {{ form.poke_name.label() }}{{ form.poke_name() }}<br>
+    {{ form.submit() }}
+</form>
+
+
+
+<div>
+{% for message in get_flashed_messages() %}
+    <strong>{{ message }}</strong>
+{% endfor %}
+</div>
+{% endblock %}

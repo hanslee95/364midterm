@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+<p><strong>{{ name }}</strong>, this is the weight and the height of <strong>{{ poke_name }}</strong>!</p>
+<p><strong>Weight (lbs)</strong>: {{ weight }} pounds!</p>
+<p><strong>Height (Feet)</strong>: {{ height }} feet tall!</p>
+
+{% if not poke_name %}
+    There are no pokemon to show.
+{% endif %}
+
+{% endblock %}
